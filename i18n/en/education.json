@@ -3,11 +3,18 @@
   "title": "Always learning.",
   "uoc": {
     "date": "2024 - present",
+    "institution": "Open University of Catalonia",
     "degree": "Bachelor's Degree in Techniques for Software Development"
   },
   "kyushu": {
     "date": "2020 - 2022",
+    "institution": "Kyushu Sangyo University",
     "degree": "Associate's Degree in Media Studies"
   },
-  "native": "Native"
+  "native": "Native",
+  "english": "English",
+  "englishLevel": "CAE C1",
+  "japanese": "Japanese",
+  "japaneseLevel": "JLPT N2",
+  "spanish": "Spanish"
 }

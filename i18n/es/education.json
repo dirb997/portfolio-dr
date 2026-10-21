@@ -3,11 +3,18 @@
   "title": "Siempre aprendiendo.",
   "uoc": {
     "date": "2024 - actualidad",
+    "institution": "Universitat Oberta de Catalunya",
     "degree": "Grado en Técnicas para el Desarrollo de Software"
   },
   "kyushu": {
     "date": "2020 - 2022",
+    "institution": "Universidad de Kyushu Sangyo",
     "degree": "Diplomatura en Diseño Multimedia"
   },
-  "native": "Nativo"
+  "native": "Nativo",
+  "english": "Inglés",
+  "englishLevel": "CAE C1",
+  "japanese": "Japonés",
+  "japaneseLevel": "JLPT N2",
+  "spanish": "Español"
 }

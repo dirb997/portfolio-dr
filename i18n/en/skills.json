@@ -5,5 +5,10 @@
   "frameworks": "Frameworks",
   "cloud": "Cloud & data",
   "infrastructure": "Infrastructure",
-  "operatingSystems": "Operating systems"
+  "operatingSystems": "Operating systems",
+  "languagesList": "C · Python · Java · PHP · JavaScript · TypeScript",
+  "frameworksList": "Node.js · Express · Vue.js · Laravel · Spring Boot · Django · FastAPI",
+  "cloudList": "AWS · Google Cloud Provider · Terraform · MySQL · PostgreSQL · MariaDB",
+  "infrastructureList": "Git · GitHub · GitLab · Bash · Zsh · Docker · UTM · VirtualBox",
+  "operatingSystemsList": "Windows · macOS · Linux distributions"
 }
