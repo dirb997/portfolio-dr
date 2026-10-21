@@ -2,28 +2,28 @@
   "eyebrow": "02 / Experience",
   "title": "Where I have been useful.",
   "eaship": {
-    "date": "Mar 2026 — ongoing",
+    "date": "Mar 2026 - ongoing",
     "role": "Full Stack Developer",
     "item1": "Develop features for a B2B SaaS logistics platform with Python, Django, FastAPI, Vue.js, and React.",
     "item2": "Containerize environments with Docker for smooth code-to-cloud deployments.",
     "item3": "Deploy applications across AWS and Google Cloud Provider."
   },
   "insuit": {
-    "date": "Sep 2025 — Mar 2026",
+    "date": "Sep 2025 - Mar 2026",
     "role": "Full Stack Developer",
     "item1": "Built efficient APIs with Java, Spring Boot, and OpenAPI.",
     "item2": "Developed frontend and services with TypeScript and Vue.js.",
     "item3": "Implemented and maintained GitLab CI/CD pipelines for testing, builds, and deployments."
   },
   "forestwood": {
-    "date": "Jun 2024 — Jul 2025",
+    "date": "Jun 2024 - Jul 2025",
     "role": "Software Developer",
     "item1": "Developed and maintained high-performance web applications with PHP Laravel.",
     "item2": "Enhanced interfaces and interactivity with Vue.js.",
     "item3": "Used Docker to streamline development, testing, and deployment."
   },
   "growth": {
-    "date": "Jun 2023 — Jun 2024",
+    "date": "Jun 2023 - Jun 2024",
     "role": "System Engineer",
     "item1": "Developed and continuously enhanced software applications with JavaScript and Python.",
     "item2": "Supported backend development with Node.js to improve application performance and scalability."
