@@ -62,7 +62,7 @@ function submitForm(event) {
 
 <template>
   <header class="site-header">
-    <a class="brand" href="#top" :aria-label="t('nav.top')">JDRB<span>.</span></a>
+    <a class="brand" href="#top" :aria-label="t('nav.top')">Juan Diego Ruiz Berlanga<span>.</span></a>
     <div class="header-tools">
       <button class="language-toggle" type="button" :aria-label="t('nav.language')" :aria-pressed="language === 'es'" @click="toggleLanguage">
         <span :class="{ 'is-active': language === 'en' }">EN</span><span aria-hidden="true">/</span><span :class="{ 'is-active': language === 'es' }">ES</span>
