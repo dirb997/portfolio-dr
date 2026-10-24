@@ -6,5 +6,8 @@
   "email": "Tu email",
   "message": "Mensaje",
   "send": "Enviar mensaje",
-  "status": "Abriendo tu cliente de correo..."
+  "sending": "Enviando...",
+  "success": "Mensaje enviado correctamente.",
+  "error": "No se ha podido enviar el mensaje. Inténtalo de nuevo.",
+  "configurationError": "El formulario de contacto aún no está configurado."
 }

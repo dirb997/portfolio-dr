@@ -5,6 +5,7 @@ import { translations } from './i18n';
 const language = ref(localStorage.getItem('portfolio-language') || 'en');
 const menuOpen = ref(false);
 const formStatus = ref('');
+const isSubmitting = ref(false);
 
 const content = computed(() => translations[language.value]);
 const t = (key) => key.split('.').reduce((value, part) => value?.[part], content.value) || key;
@@ -67,15 +68,42 @@ function experienceItems(experience) {
     .filter((item) => !item.startsWith(`experience.${experience.key}.item`));
 }
 
-function submitForm(event) {
+async function submitForm(event) {
   const form = event.currentTarget;
-  const name = form.elements.name.value.trim();
-  const email = form.elements.email.value.trim();
-  const message = form.elements.message.value.trim();
-  const subject = encodeURIComponent(`Portfolio message from ${name}`);
-  const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
-  window.location.href = `mailto:jdruizberlanga@gmail.com?subject=${subject}&body=${body}`;
-  formStatus.value = t('contact.status');
+  const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
+
+  if (!accessKey) {
+    formStatus.value = t('contact.configurationError');
+    return;
+  }
+
+  isSubmitting.value = true;
+  formStatus.value = t('contact.sending');
+
+  const data = new FormData(form);
+  data.append('access_key', accessKey);
+  data.append('subject', `Portfolio message from ${data.get('name')}`);
+  data.append('from_name', 'Portfolio contact form');
+
+  try {
+    const response = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      body: data
+    });
+    const result = await response.json();
+
+    if (!response.ok || !result.success) {
+      throw new Error(result.message || 'Web3Forms submission failed');
+    }
+
+    form.reset();
+    formStatus.value = t('contact.success');
+  } catch (error) {
+    console.error('Unable to send contact form', error);
+    formStatus.value = t('contact.error');
+  } finally {
+    isSubmitting.value = false;
+  }
 }
 </script>
 
@@ -151,7 +179,7 @@ function submitForm(event) {
     <section class="contact section-shell reveal" id="contact">
       <div class="contact-copy"><p class="eyebrow">{{ t('contact.eyebrow') }}</p><h2>{{ t('contact.title') }}</h2><p>{{ t('contact.description') }}</p></div>
       <div class="contact-details"><a href="mailto:jdruizberlanga@gmail.com">jdruizberlanga@gmail.com <span>↗</span></a><a href="tel:+34664258720">+34 664 258 720 <span>↗</span></a><p>Valencia, Spain</p></div>
-      <form class="contact-form" @submit.prevent="submitForm"><label for="name">{{ t('contact.name') }}</label><input id="name" name="name" type="text" autocomplete="name" required><label for="email">{{ t('contact.email') }}</label><input id="email" name="email" type="email" autocomplete="email" required><label for="message">{{ t('contact.message') }}</label><textarea id="message" name="message" rows="4" required></textarea><button class="button button-primary" type="submit">{{ t('contact.send') }} <span aria-hidden="true">↗</span></button><p class="form-status" role="status">{{ formStatus }}</p></form>
+      <form class="contact-form" @submit.prevent="submitForm"><label for="name">{{ t('contact.name') }}</label><input id="name" name="name" type="text" autocomplete="name" required><label for="email">{{ t('contact.email') }}</label><input id="email" name="email" type="email" autocomplete="email" required><label for="message">{{ t('contact.message') }}</label><textarea id="message" name="message" rows="4" required></textarea><button class="button button-primary" type="submit" :disabled="isSubmitting">{{ isSubmitting ? t('contact.sending') : t('contact.send') }} <span aria-hidden="true">↗</span></button><p class="form-status" role="status" aria-live="polite">{{ formStatus }}</p></form>
     </section>
   </main>
 

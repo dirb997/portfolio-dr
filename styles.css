@@ -88,6 +88,7 @@ h2 { max-width: 470px; margin-bottom: 0; font-size: clamp(2rem, 4vw, 4rem); line
 .contact-form input, .contact-form textarea { width: 100%; border: 1px solid var(--line); border-radius: 0; background: var(--surface); padding: 11px; color: var(--ink); font: inherit; resize: vertical; }
 .contact-form input:focus, .contact-form textarea:focus { outline: 2px solid var(--lime); border-color: var(--ink); }
 .contact-form .button { align-self: flex-start; margin-top: 14px; }
+.contact-form .button:disabled { cursor: wait; opacity: .65; transform: none; }
 .form-status { min-height: 24px; margin: 8px 0 0; color: var(--blue); font-size: .8rem; }
 .site-footer { display: flex; justify-content: space-between; padding-block: 25px; border-top: 1px solid var(--line); color: var(--muted); font-family: "Space Mono", monospace; font-size: .68rem; }
 .hero-copy { animation: rise-in .7s both; }
