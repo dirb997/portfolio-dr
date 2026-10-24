@@ -4,6 +4,7 @@
   "eaship": {
     "date": "Mar 2026 - actualidad",
     "role": "Desarrollador Full Stack",
+    "location": "Valencia, España",
     "item1": "Desarrollo funcionalidades para una plataforma logística B2B SaaS con Python, Django, FastAPI, Vue.js y React.",
     "item2": "Contenerizo entornos con Docker para facilitar los despliegues de código a la nube.",
     "item3": "Despliego aplicaciones en AWS y Google Cloud Provider."
@@ -11,6 +12,7 @@
   "insuit": {
     "date": "Sep 2025 - Mar 2026",
     "role": "Desarrollador Full Stack",
+    "location": "Valencia, España",
     "item1": "Construí APIs eficientes con Java, Spring Boot y OpenAPI.",
     "item2": "Desarrollé frontend y servicios con TypeScript y Vue.js.",
     "item3": "Implementé y mantuve pipelines CI/CD de GitLab para pruebas, compilaciones y despliegues."
@@ -18,6 +20,7 @@
   "forestwood": {
     "date": "Jun 2024 - Jul 2025",
     "role": "Desarrollador de Software",
+    "location": "Sendai, Japón",
     "item1": "Desarrollé y mantuve aplicaciones web de alto rendimiento con PHP Laravel.",
     "item2": "Mejoré las interfaces y la interactividad con Vue.js.",
     "item3": "Usé Docker para agilizar el desarrollo, las pruebas y los despliegues."
@@ -25,6 +28,7 @@
   "growth": {
     "date": "Jun 2023 - Jun 2024",
     "role": "Ingeniero de Sistemas",
+    "location": "Sendai, Japón",
     "item1": "Desarrollé y mejoré continuamente aplicaciones de software con JavaScript y Python.",
     "item2": "Apoyé el desarrollo backend con Node.js para mejorar el rendimiento y la escalabilidad."
   }

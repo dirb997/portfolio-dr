@@ -6,5 +6,8 @@
   "email": "Your email",
   "message": "Message",
   "send": "Send message",
-  "status": "Opening your email client..."
+  "sending": "Sending...",
+  "success": "Message sent successfully.",
+  "error": "The message could not be sent. Please try again.",
+  "configurationError": "The contact form is not configured yet."
 }
