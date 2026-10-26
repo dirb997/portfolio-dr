@@ -1,0 +1,29 @@
+{
+  "eyebrow": "03 / Selected projects",
+  "title": "Things I build outside the day job.",
+  "viewCode": "View on GitHub",
+  "familyMenu": {
+    "number": "01",
+    "type": "Full-stack product",
+    "title": "Family Menu AI",
+    "description": "A full-stack application for creating and managing family meal plans with AI-assisted suggestions."
+  },
+  "deviceManager": {
+    "number": "02",
+    "type": "Backend system",
+    "title": "Device Manager",
+    "description": "A Python backend for monitoring devices connected to a machine through USB, Bluetooth, and Wi-Fi."
+  },
+  "movieSearch": {
+    "number": "03",
+    "type": "Web application",
+    "title": "Movie Search Tool",
+    "description": "A focused JavaScript app for searching movies and presenting useful information through an external API."
+  },
+  "fileSearch": {
+    "number": "04",
+    "type": "CLI utility",
+    "title": "File Search & Delete",
+    "description": "A terminal utility that helps users find, select, and safely delete files from their system."
+  }
+}
