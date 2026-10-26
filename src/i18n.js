@@ -3,6 +3,7 @@ import enNav from '../i18n/en/nav.json';
 import enHero from '../i18n/en/hero.json';
 import enFacts from '../i18n/en/facts.json';
 import enExperience from '../i18n/en/experience.json';
+import enProjects from '../i18n/en/projects.json';
 import enSkills from '../i18n/en/skills.json';
 import enEducation from '../i18n/en/education.json';
 import enContact from '../i18n/en/contact.json';
@@ -12,6 +13,7 @@ import esNav from '../i18n/es/nav.json';
 import esHero from '../i18n/es/hero.json';
 import esFacts from '../i18n/es/facts.json';
 import esExperience from '../i18n/es/experience.json';
+import esProjects from '../i18n/es/projects.json';
 import esSkills from '../i18n/es/skills.json';
 import esEducation from '../i18n/es/education.json';
 import esContact from '../i18n/es/contact.json';
@@ -24,6 +26,7 @@ export const translations = {
     hero: enHero,
     facts: enFacts,
     experience: enExperience,
+    projects: enProjects,
     skills: enSkills,
     education: enEducation,
     contact: enContact,
@@ -35,6 +38,7 @@ export const translations = {
     hero: esHero,
     facts: esFacts,
     experience: esExperience,
+    projects: esProjects,
     skills: esSkills,
     education: esEducation,
     contact: esContact,

@@ -1,0 +1,29 @@
+{
+  "eyebrow": "03 / Proyectos destacados",
+  "title": "Lo que construyo fuera del trabajo.",
+  "viewCode": "Ver en GitHub",
+  "familyMenu": {
+    "number": "01",
+    "type": "Producto full stack",
+    "title": "Family Menu AI",
+    "description": "Una aplicación full stack para crear y gestionar menús familiares con sugerencias asistidas por IA."
+  },
+  "deviceManager": {
+    "number": "02",
+    "type": "Sistema backend",
+    "title": "Device Manager",
+    "description": "Un backend en Python para monitorizar dispositivos conectados a un equipo mediante USB, Bluetooth y Wi-Fi."
+  },
+  "movieSearch": {
+    "number": "03",
+    "type": "Aplicación web",
+    "title": "Movie Search Tool",
+    "description": "Una aplicación JavaScript para buscar películas y mostrar información útil mediante una API externa."
+  },
+  "fileSearch": {
+    "number": "04",
+    "type": "Utilidad CLI",
+    "title": "File Search & Delete",
+    "description": "Una utilidad de terminal para encontrar, seleccionar y eliminar archivos del sistema de forma controlada."
+  }
+}
