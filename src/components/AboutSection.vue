@@ -3,7 +3,7 @@ defineProps({ t: { type: Function, required: true } });
 </script>
 
 <template>
-  <section class="hero section-shell" id="about">
+  <section class="hero section-shell">
     <div class="hero-copy">
       <p class="eyebrow" v-html="t('hero.eyebrow')"></p>
       <h1 v-html="t('hero.title')"></h1>
@@ -26,5 +26,16 @@ defineProps({ t: { type: Function, required: true } });
     <div><strong>4</strong><span>{{ t('facts.roles') }}</span></div>
     <div><strong>3</strong><span>{{ t('facts.languages') }}</span></div>
     <div><strong>∞</strong><span>{{ t('facts.curiosity') }}</span></div>
+  </section>
+
+  <section class="about-detail content-section section-shell reveal" id="about">
+    <div class="section-heading">
+      <p class="eyebrow">{{ t('about.eyebrow') }}</p>
+      <h2>{{ t('about.title') }}</h2>
+    </div>
+    <div class="about-detail-copy">
+      <p>{{ t('about.intro') }}</p>
+      <p>{{ t('about.approach') }}</p>
+    </div>
   </section>
 </template>
